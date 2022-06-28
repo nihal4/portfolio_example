@@ -1,0 +1,61 @@
+.navbar-toggler{
+    background-color: $text-color;
+    padding: 1px 12px;
+}
+.burger{
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 200;
+    &-brand{
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 800;
+        &:hover{
+            color: $text-color;
+        }
+        &-sub{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    &-collapse{
+        flex-grow: 0;
+    }
+    &-nav{
+        gap: 4rem;
+    }
+}
+.nav-link{
+    color: $text-color;
+    transition: all .2s; 
+    font-weight: 300;
+    &:hover{
+        color: $text-color;
+        transform: perspective(200px) translateZ(20px);
+    }
+    &:active{
+        color: $text-color;
+        transform: perspective(200px) translateZ(-20px);
+    }
+    &:focus{
+        color: $text-color;
+    }
+}
+@media(max-width:$tablet){
+    .navbar{
+        background-color: $background-color2;
+    }
+    .navbar-nav{
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}

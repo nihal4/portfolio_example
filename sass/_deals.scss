@@ -1,0 +1,50 @@
+.deals {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  &-img-top {
+  }
+  &-list {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+  }
+}
+.package {
+  border-radius: 5px;
+  background-color: $album-color;
+  box-shadow: 1px 8px 10px $album-color;
+  min-height: 60vh;
+  transition: all 0.2s;
+  &:hover {
+    transform: perspective(200px) translateZ(5px);
+  }
+}
+.deal-item-list {
+  list-style: none;
+  padding-left: 0;
+}
+.deal-item-list-item {
+  text-align: center;
+  padding: 5px;
+}
+.deal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.money-sub {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+@media (max-width: $tablet) {
+  .deals-list {
+    flex-direction: column;
+  }
+}

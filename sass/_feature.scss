@@ -1,0 +1,52 @@
+.feature{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    &-heading{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        gap: 20px;
+        &-item{
+            
+        }
+    }
+}
+.card{
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    &-img-top{
+        width: 60px;
+    }
+    &-text{
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    &-p{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media (max-width:$tablet){
+    .feature-list{
+        flex-direction: column;
+    }
+}
+@media (max-width:1440px){
+    .feature{
+        margin-top: 5rem;
+    }
+}

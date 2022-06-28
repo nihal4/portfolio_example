@@ -1,0 +1,10 @@
+.footer{
+    background-color: $background-color2;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-img{
+        width: 30px;
+    }
+}

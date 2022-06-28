@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $font-family;
+    color: $text-color;
+    background-color: $background-color;
+}
+.container-fluid{
+    z-index: 100;
+    position: absolute;
+    top: 10vh;
+
+}
+.row{
+    margin-right:0;
+    margin-left: 0;
+    gap: 3rem;
+}
+html{
+    scroll-behavior: smooth;
+}
